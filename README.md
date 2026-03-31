@@ -1,73 +1,49 @@
-# React + TypeScript + Vite
+# 5ive Marketing
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Benvenuto nel sito web di 5ive Marketing, un'agenzia digitale dedicata a trasformare la presenza online delle aziende attraverso soluzioni di marketing strategiche e innovative.
 
-Currently, two official plugins are available:
+## Il Progetto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Questo sito web è stato sviluppato per presentare 5ive Marketing e i suoi servizi digitali. La piattaforma offre un'esperienza utente fluida e moderna, pensata per mostrare come l'agenzia aiuta le aziende a crescere attraverso marketing digitale strategico, creazione di contenuti coinvolgenti e campagne data-driven.
 
-## React Compiler
+## Tecnologie Utilizzate
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Il progetto è stato realizzato con un stack tecnologico moderno e performante:
 
-## Expanding the ESLint configuration
+- **React** - Per la creazione di un'interfaccia utente interattiva e reattiva
+- **TypeScript** - Per garantire type safety e migliorare la qualità del codice
+- **Vite** - Per uno sviluppo rapido e un build process ottimizzato
+- **Tailwind CSS** - Per uno styling moderno e responsive
+- **PostCSS** - Per l'elaborazione avanzata degli stili CSS
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Struttura del Progetto
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Il sito è organizzato in sezioni principali che guidano l'utente attraverso la scoperta dei servizi offerti:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- **Header** - Una sezione accattivante che presenta la missione dell'agenzia
+- **Chi Siamo** - La storia e i valori di 5ive Marketing
+- **Contatti** - Informazioni per mettersi in contatto con il team
+- **Footer** - Link di navigazione e informazioni aggiuntive
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Caratteristiche Principali
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- **Design Responsive** - Ottimizzato per funzionare perfettamente su tutti i dispositivi
+- **Navigazione Fluida** - Scorrimento morbido tra le sezioni del sito
+- **Interfaccia Moderna** - Design pulito e professionale che riflette l'identità del brand
+- **Performance Ottimizzata** - Caricamento rapido grazie a Vite e React ottimizzato
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Come Sviluppare
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Per avviare il progetto in locale:
+
+1. Installa le dipendenze con `npm install`
+2. Avvia il server di sviluppo con `npm run dev`
+3. Apri il browser all'indirizzo indicato nel terminale
+
+## Contatti
+
+5ive Marketing ha sede a Bracciano, Italia. Per qualsiasi informazione sui nostri servizi digitali o per discutere il tuo progetto, non esitare a contattarci.
+
+---
+
+© 2026 5ive Marketing. Tutti i diritti riservati.
