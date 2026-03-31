@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "../styles/Navbar.css";
 
-const Navbar: React.FC = () => {
+const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {

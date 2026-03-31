@@ -1,10 +1,9 @@
-import React from "react";
-import "../styles/About.css";
 import salesImage from "../assets/sales.jpeg";
 import resultsImage from "../assets/results.jpg";
 import analysisImage from "../assets/analysis.jpg";
 import personalizationImage from "../assets/personalization.jpg";
 import listenImage from "../assets/listen.jpg";
+import "../styles/About.css";
 
 const About = () => {
   return (

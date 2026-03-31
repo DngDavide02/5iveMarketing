@@ -3,6 +3,8 @@
 @tailwind utilities;
 
 :root {
+  --primary: #49d1e8;
+  --accent: #e55297;
   --primary-cyan: #49d1e8;
   --primary-pink: #e55297;
   --dark-navy: #1a2a40;

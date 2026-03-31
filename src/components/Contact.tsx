@@ -1,7 +1,6 @@
-import React from "react";
 import "../styles/Contact.css";
 
-const Contact: React.FC = () => {
+const Contact = () => {
   return (
     <section id="contact" className="contact">
       <div className="container mx-auto px-4">

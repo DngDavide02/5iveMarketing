@@ -1,7 +1,6 @@
-import React from "react";
 import "../styles/Header.css";
 
-const Header: React.FC = () => {
+const Header = () => {
   const scrollToNext = () => {
     const nextSection = document.querySelector(".section");
     if (nextSection) {

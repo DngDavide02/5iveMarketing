@@ -1,7 +1,6 @@
-import React from "react";
 import "../styles/Footer.css";
 
-const Footer: React.FC = () => {
+const Footer = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
