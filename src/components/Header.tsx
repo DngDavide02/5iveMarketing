@@ -1,4 +1,5 @@
 import "../styles/Header.css";
+import handsImage from "../assets/hands.jpeg";
 
 const Header = () => {
   const scrollToNext = () => {
@@ -57,7 +58,7 @@ const Header = () => {
           </div>
 
           <div className="header-image lg:justify-self-end">
-            <img src="/src/assets/hands.jpeg" alt="Marketing team collaboration" loading="eager" />
+            <img src={handsImage} alt="Marketing team collaboration" loading="eager" />
           </div>
         </div>
       </div>

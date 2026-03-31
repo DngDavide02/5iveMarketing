@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "../styles/Navbar.css";
+import logoImage from "../assets/logo-transparent-bg.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,7 +28,7 @@ const Navbar = () => {
       <div className="navbar-container">
         <div className="navbar-logo">
           <a href="#home" className="logo-link">
-            <img src="src\assets\logo-transparent-bg.png" alt="5iveMarketing" className="logo-image" />
+            <img src={logoImage} alt="5iveMarketing" className="logo-image" />
           </a>
         </div>
 
