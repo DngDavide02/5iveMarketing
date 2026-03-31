@@ -2,6 +2,7 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import About from "./components/About";
+import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <Navbar />
       <Header />
       <About />
+      <Contact />
       <Footer />
     </>
   );

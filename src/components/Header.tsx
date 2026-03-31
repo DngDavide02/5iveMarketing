@@ -10,7 +10,7 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="header">
+    <header id="home" className="header">
       <div className="container mx-auto px-4 h-full flex items-center">
         <div className="header-content grid lg:grid-cols-2 gap-12 lg:gap-16 items-center w-full">
           <div className="text-content lg:text-left text-center">
@@ -24,14 +24,30 @@ const Header: React.FC = () => {
             </p>
 
             <div className="header-buttons">
-              <button className="btn-hero btn-hero-primary">
+              <button
+                className="btn-hero btn-hero-primary"
+                onClick={() => {
+                  const element = document.getElementById("contact");
+                  if (element) {
+                    element.scrollIntoView({ behavior: "smooth" });
+                  }
+                }}
+              >
                 Inizia Ora
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                   <path d="M5 12h14M12 5l7 7-7 7" />
                 </svg>
               </button>
 
-              <button className="btn-hero btn-hero-secondary">
+              <button
+                className="btn-hero btn-hero-secondary"
+                onClick={() => {
+                  const element = document.getElementById("about");
+                  if (element) {
+                    element.scrollIntoView({ behavior: "smooth" });
+                  }
+                }}
+              >
                 Scopri di Più
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                   <circle cx="12" cy="12" r="10" />

@@ -8,7 +8,7 @@ import listenImage from "../assets/listen.jpg";
 
 const About = () => {
   return (
-    <section className="about-section">
+    <section id="about" className="about-section">
       <div className="container mx-auto px-4 py-16">
         <div className="text-center mb-16">
           <h2 className="section-title">Chi Siamo</h2>

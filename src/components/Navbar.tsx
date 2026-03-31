@@ -8,10 +8,17 @@ const Navbar: React.FC = () => {
     setIsOpen(!isOpen);
   };
 
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+    setIsOpen(false);
+  };
+
   const navLinks = [
     { name: "Home", href: "#home" },
     { name: "Chi Siamo", href: "#about" },
-    { name: "Servizi", href: "#services" },
     { name: "Contatti", href: "#contact" },
   ];
 
@@ -26,14 +33,24 @@ const Navbar: React.FC = () => {
 
         <div className="navbar-links">
           {navLinks.map((link) => (
-            <a key={link.name} href={link.href} className="nav-link">
+            <button key={link.name} onClick={() => scrollToSection(link.href.substring(1))} className="nav-link">
               {link.name}
-            </a>
+            </button>
           ))}
         </div>
 
         <div className="navbar-cta">
-          <button className="cta-button">Inizia Ora</button>
+          <button
+            className="cta-button"
+            onClick={() => {
+              const element = document.getElementById("contact");
+              if (element) {
+                element.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
+          >
+            Inizia Ora
+          </button>
         </div>
 
         <button className="hamburger-button" onClick={toggleMenu} aria-label="Toggle navigation menu" aria-expanded={isOpen}>
@@ -50,9 +67,9 @@ const Navbar: React.FC = () => {
       <div className={`mobile-menu ${isOpen ? "mobile-menu-open" : ""}`}>
         <div className="mobile-menu-content">
           {navLinks.map((link) => (
-            <a key={link.name} href={link.href} className="mobile-nav-link" onClick={toggleMenu}>
+            <button key={link.name} onClick={() => scrollToSection(link.href.substring(1))} className="mobile-nav-link">
               {link.name}
-            </a>
+            </button>
           ))}
           <button className="mobile-cta-button" onClick={toggleMenu}>
             Get Started
