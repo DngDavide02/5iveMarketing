@@ -10,9 +10,9 @@ const Navbar: React.FC = () => {
 
   const navLinks = [
     { name: "Home", href: "#home" },
-    { name: "About", href: "#about" },
-    { name: "Services", href: "#services" },
-    { name: "Contact", href: "#contact" },
+    { name: "Chi Siamo", href: "#about" },
+    { name: "Servizi", href: "#services" },
+    { name: "Contatti", href: "#contact" },
   ];
 
   return (
@@ -33,7 +33,7 @@ const Navbar: React.FC = () => {
         </div>
 
         <div className="navbar-cta">
-          <button className="cta-button">Get Started</button>
+          <button className="cta-button">Inizia Ora</button>
         </div>
 
         <button className="hamburger-button" onClick={toggleMenu} aria-label="Toggle navigation menu" aria-expanded={isOpen}>

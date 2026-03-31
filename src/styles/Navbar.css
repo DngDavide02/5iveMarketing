@@ -1,10 +1,13 @@
 .navbar {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 1000;
-  background-color: var(--white);
-  box-shadow: 0 2px 10px var(--shadow-soft);
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
   transition: all 0.3s ease;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-container {
@@ -159,9 +162,35 @@
   box-shadow: 0 8px 25px var(--shadow-soft);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .navbar-container {
-    padding: 0 0.5rem;
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  .navbar-links {
+    gap: 1.5rem;
+  }
+
+  .nav-link {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .cta-button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  .navbar-logo .logo-image {
+    height: 140px;
+  }
+}
+
+@media (max-width: 1027px) and (min-width: 770px) {
+  .navbar-container {
+    padding: 0 0.75rem;
+    height: 65px;
   }
 
   .navbar-links {
@@ -181,20 +210,90 @@
   }
 
   .navbar-logo .logo-image {
-    height: 160px;
+    height: 130px;
+  }
+
+  .mobile-menu-content {
+    padding: 1.75rem;
+    gap: 1.25rem;
+  }
+
+  .mobile-nav-link {
+    font-size: 1rem;
+    padding: 0.625rem 0;
+  }
+
+  .mobile-cta-button {
+    padding: 0.875rem 1.5rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    padding: 0 0.75rem;
+    height: 65px;
+  }
+
+  .navbar-links {
+    display: none;
+  }
+
+  .navbar-cta {
+    display: none;
+  }
+
+  .hamburger-button {
+    display: block;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  .navbar-logo .logo-image {
+    height: 130px;
+  }
+
+  .mobile-menu-content {
+    padding: 1.75rem;
+    gap: 1.25rem;
+  }
+
+  .mobile-nav-link {
+    font-size: 1rem;
+    padding: 0.625rem 0;
+  }
+
+  .mobile-cta-button {
+    padding: 0.875rem 1.5rem;
+    font-size: 0.95rem;
   }
 }
 
 @media (max-width: 480px) {
   .navbar-container {
     height: 60px;
+    padding: 0 0.5rem;
+  }
+
+  .navbar-logo .logo-image {
+    height: 110px;
   }
 
   .mobile-menu-content {
     padding: 1.5rem;
+    gap: 1rem;
   }
 
-  .navbar-logo .logo-image {
-    height: 120px;
+  .mobile-nav-link {
+    font-size: 0.9rem;
+    padding: 0.5rem 0;
+  }
+
+  .mobile-cta-button {
+    padding: 0.75rem 1.25rem;
+    font-size: 0.9rem;
+    margin-top: 0.75rem;
   }
 }
